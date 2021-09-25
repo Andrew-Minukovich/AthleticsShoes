@@ -23,6 +23,12 @@
                 <li class='navigation-section__page'><a class='navigation-section__link-page' href="#">Athletic Shoes</a></li>
                 <li class='navigation-section__page'><a class='navigation-section__link-page' href="#">Men's Athletic Shoes</a></li>
             </ul>
+            <a href="#" class="navigation-section__back-link-path">
+                <div class="navigation-section__back-path-arrow">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="#3f66f3" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg>
+                </div>
+                <div class="navigation-section__back-path-title">Back To Results</div>
+            </a>
         </nav>
     </section>
 
@@ -32,6 +38,7 @@
 
 
             <div class="catalog__filters">
+                <div class="catalog__filters-button">Filters</div>
                 <div class="department">
                     <h3 class="department__title">Department</h3>
                     <ul class="department__list">
@@ -69,92 +76,105 @@
                     <div class="catalog__viewing">Viewing 1-24 of 24</div>
                     <div class="sort">
                         <h3 class="sort__title">Sort</h3>
-                        <select name='sortType' class="sort__select-type">
-                            <option disabled selected hidden value="">Select</option>
-                        </select>
+                        <div class="sort__select-type">
+                            <h4 class="sort__select-title">Select</h4>
+                            <div class="sort__select-arrow">
+                                <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.74 18.47"><defs><style>.cls-1{fill:#666;}</style></defs><title>arrow-icon</title><polygon class="cls-1" points="42.74 1.57 41.5 0 21.37 15.92 1.24 0 0 1.57 21.37 18.47 42.74 1.57"/></svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="catalog__list">
                     <div class="product">
                         <img src="./assets/product-image_0.png" alt="Adidas Outdoor Men's Caprock Trail Hiking Shoes" class="product__image">
-                        <h3 class="product__title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
-                        <div class="product__previous-cost">$2,499.00</div>
-                        <div class="product__current-cost">$2,960.00</div>
-                        <div class="product__sale-range">$1,545.00 - $1,230.00 <span>sale</span></div>
-                        <div class="product__grade">
-                            <div class="product__star-wrapper">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                        <div class="product__description">
+                            <h3 class="product__title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
+                            <div class="product__previous-cost">$2,499.00</div>
+                            <div class="product__current-cost">$2,960.00</div>
+                            <div class="product__sale-range">$1,545.00 - $1,230.00 <span>sale</span></div>
+                            <div class="product__grade">
+                                <div class="product__star-wrapper">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                </div>
+                                <div class="product__start-count">(0)</div>
                             </div>
-                            <div class="product__start-count">(0)</div>
                         </div>
                     </div>
                     <div class="product">
                         <img src="./assets/product-image_1.png" alt="Nike Men's Air Force 1 Running Shoes" class="product__image">
-                        <h3 class="product__title">Nike Men's Air Force 1 Running Shoes</h3>
-                        <div class="product__cost-range">$2,371.99 - $2,399.99</div>
-                        <div class="product__grade">
-                            <div class="product__star-wrapper">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                        <div class="product__description">
+                            <h3 class="product__title">Nike Men's Air Force 1 Running Shoes</h3>
+                            <div class="product__cost-range">$2,371.99 - $2,399.99</div>
+                            <div class="product__grade">
+                                <div class="product__star-wrapper">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                </div>
+                                <div class="product__start-count">(0)</div>
                             </div>
-                            <div class="product__start-count">(0)</div>
                         </div>
                     </div>
                     <div class="product">
                         <img src="./assets/product-image_0.png" alt="Adidas Outdoor Men's Caprock Trail Hiking Shoes" class="product__image">
-                        <h3 class="product__title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
-                        <div class="product__previous-cost">$2,499.00</div>
-                        <div class="product__current-cost">$2,960.00</div>
-                        <div class="product__sale-range">$1,545.00 - $1,230.00 <span>sale</span></div>
-                        <div class="product__grade">
-                            <div class="product__star-wrapper">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                        <div class="product__description">
+                            <h3 class="product__title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
+                            <div class="product__previous-cost">$2,499.00</div>
+                            <div class="product__current-cost">$2,960.00</div>
+                            <div class="product__sale-range">$1,545.00 - $1,230.00 <span>sale</span></div>
+                            <div class="product__grade">
+                                <div class="product__star-wrapper">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                </div>
+                                <div class="product__start-count">(0)</div>
                             </div>
-                            <div class="product__start-count">(0)</div>
                         </div>
                     </div>
                     <div class="product">
                         <img src="./assets/product-image_1.png" alt="Nike Men's Air Force 1 Running Shoes" class="product__image">
-                        <h3 class="product__title">Nike Men's Air Force 1 Running Shoes</h3>
-                        <div class="product__cost-range">$2,371.99 - $2,399.99</div>
-                        <div class="product__grade">
-                            <div class="product__star-wrapper">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                        <div class="product__description">
+                            <h3 class="product__title">Nike Men's Air Force 1 Running Shoes</h3>
+                            <div class="product__cost-range">$2,371.99 - $2,399.99</div>
+                            <div class="product__grade">
+                                <div class="product__star-wrapper">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                </div>
+                                <div class="product__start-count">(0)</div>
                             </div>
-                            <div class="product__start-count">(0)</div>
                         </div>
                     </div>
                     <div class="product">
                         <img src="./assets/product-image_0.png" alt="Adidas Outdoor Men's Caprock Trail Hiking Shoes" class="product__image">
-                        <h3 class="product__title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
-                        <div class="product__previous-cost">$2,499.00</div>
-                        <div class="product__current-cost">$2,960.00</div>
-                        <div class="product__sale-range">$1,545.00 - $1,230.00 <span>sale</span></div>
-                        <div class="product__grade">
-                            <div class="product__star-wrapper">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
-                                <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                        <div class="product__description">
+                            <h3 class="product__title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
+                            <div class="product__previous-cost">$2,499.00</div>
+                            <div class="product__current-cost">$2,960.00</div>
+                            <div class="product__sale-range">$1,545.00 - $1,230.00 <span>sale</span></div>
+                            <div class="product__grade">
+                                <div class="product__star-wrapper">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                    <img src="./assets/star-empty-image.png" alt="product star" class="product__star">
+                                </div>
+                                <div class="product__start-count">(0)</div>
                             </div>
-                            <div class="product__start-count">(0)</div>
                         </div>
                     </div>
                 </div>
@@ -165,6 +185,8 @@
 
 
 
-    <footer class='main-footer'></footer>
+    <footer class='main-footer'>
+        <div class="main-footer__title">footer fpo</div>
+    </footer>
 </body>
 </html>
