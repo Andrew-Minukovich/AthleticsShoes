@@ -338,9 +338,39 @@
 
 /* SORT */
 .sort {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.sort__dropdown {
+    display: none;
+    position: absolute;
+    width: 202px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-color:#fff;
+    top: 100%;
+    left: 19%;
+}
+
+.sort__dropdown-content {
+    list-style-type: none;
+}
+
+.sort__dropdown-item {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    cursor: pointer;
+    transition: .3s color linear;
+}
+
+.sort__dropdown-item:hover {
+    color: #635f5f;
 }
 
 .sort__title {
@@ -371,6 +401,12 @@
 
 .sort__select-arrow {
     width: 14px;
+    cursor: pointer;
+    transition: .3s transform linear;
+}
+
+.sort__select-arrow._open {
+    transform: rotate(180deg);
 }
 
 
@@ -617,6 +653,10 @@
     .sort__select-type {
         width: 109px;
         padding: 7px 16px 6px 10px;
+    }
+
+    .sort__dropdown {
+        width: 111px;
     }
 
     .sort__select-title {
