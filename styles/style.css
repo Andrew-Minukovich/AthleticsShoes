@@ -148,6 +148,7 @@
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     margin-bottom: 21px;
+    border: transparent;
     cursor: pointer;
     transition: .3s background-color linear;
 }
@@ -170,6 +171,10 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+.filters-modal--open {
+    display: block;
+}
+
 .filters-modal-content {
     position: relative;
     background-color: #fff;
@@ -177,6 +182,13 @@
     padding: 20px;
     width: 100%;
     height: 70%;
+}
+
+.filters-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .filters-modal__title {
@@ -188,16 +200,22 @@
 }
 
 .filters-modal-close {
-    position: absolute;
-    right: 6%;
-    top: 5%;
-    width: 15px;
-    margin-left: auto;
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 5px;
     cursor: pointer;
+}
+
+.filters-modal-close:focus {
+    border: 2px solid black;
 }
 
 .filters-modal-close:hover path {
     fill: #262727
+}
+
+.filters-modal-close svg {
+    width: 15px;
 }
 
 .filters-modal-close path {
@@ -316,35 +334,6 @@
     align-items: center;
 }
 
-.sort__dropdown {
-    display: none;
-    position: absolute;
-    width: 202px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 5px 30px;
-    background-color:#fff;
-    top: 100%;
-    left: 19%;
-}
-
-.sort__dropdown-content {
-    list-style-type: none;
-}
-
-.sort__dropdown-item {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    color: #000000;
-    cursor: pointer;
-    transition: .3s color linear;
-}
-
-.sort__dropdown-item:hover {
-    color: #635f5f;
-}
-
 .sort__title {
     font-size: 19px;
     font-weight: 600;
@@ -441,41 +430,6 @@
     margin-bottom: 14px;
 }
 
-.product__cost-range {
-    font-size: 21px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    color:#747373;
-    margin-bottom: 91px;
-}
-
-.product__previous-cost {
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
-    color:#747373;
-    text-decoration: line-through;
-    margin-bottom: 3px;
-}
-
-.product__current-cost {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    color:#000000;
-    margin-bottom: 3px;
-}
-
-.product__sale-range {
-    max-width: 150px;
-    width: 100%;
-    font-size: 21px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    color:#f80909;
-    margin-bottom: 14px;
-}
-
 .product__price.product__price--sale-range span {
     text-transform: uppercase;
     font-size: 18px;
@@ -497,16 +451,13 @@
 }
 
 .product__link-review {
-    text-decoration: none;
-}
-
-.product__start-count {
     font-size: 14px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     color:#052183;
     margin-left: 7px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
