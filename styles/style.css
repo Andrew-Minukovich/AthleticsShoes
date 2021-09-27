@@ -43,7 +43,7 @@
 
 .navigation-section__page {
     position: relative;
-    color: #3f66f3;
+    color: #053c63;
 }
 
 .navigation-section__page:not(:last-child):after {
@@ -54,17 +54,21 @@
     font-size: 14px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #3f66f3;
+    color: #053c63;
 }
 
 .navigation-section__link-page {
     text-decoration: none;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    color: #3f66f3;
+    color: #053c63;
     margin-right: 18px;
     transition: .3s color linear;
+}
+
+.navigation-section__page:last-child .navigation-section__link-page {
+    font-weight: 600;
 }
 
 .navigation-section__page:last-child
@@ -85,7 +89,7 @@
 }
 
 .navigation-section__back-path-arrow svg {
-    fill: #3f66f3;
+    fill: #053c63;
     transition: .3s fill linear;
 }
 
@@ -102,7 +106,7 @@
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #3f66f3;
+    color: #053c63;
     transition: .3s color linear;
 }
 
@@ -206,10 +210,6 @@
     cursor: pointer;
 }
 
-.filters-modal-close:focus {
-    border: 2px solid black;
-}
-
 .filters-modal-close:hover path {
     fill: #262727
 }
@@ -291,7 +291,7 @@
     font-size: 14px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #3f66f3;
+    color: #053c63;
     transition: .3s color linear;
 }
 
