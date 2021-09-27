@@ -567,6 +567,11 @@
         width: 150px
     }
 
+    .sort__dropdown {
+        width: 152px;
+        left: 24%;
+    }
+
     .product:nth-child(3n) {
         border-right: none;
     }
@@ -657,6 +662,7 @@
 
     .sort__dropdown {
         width: 111px;
+        left: 27%;
     }
 
     .sort__select-title {
