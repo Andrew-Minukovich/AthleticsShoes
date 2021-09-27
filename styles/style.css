@@ -295,6 +295,20 @@
 
 .brand__label {
     position: relative;
+    cursor: pointer;
+}
+
+.brand__label::before {
+    position: absolute;
+    top: 13%;
+    left: -28px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #000000;
+}
+
+.brand__label-name {
     font-size: 14px;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
@@ -302,21 +316,11 @@
     cursor: pointer;
 }
 
-.brand__label::before {
-    position: absolute;
-    top: 13%;
-    left: -30px;
-    content: '';
-    width: 14px;
-    height: 14px;
-    border: 1px solid #000000;
-}
-
-.brand__checkbox::after {
+.brand__label-name::before {
     position: absolute;
     display: none;
-    top: 35%;
-    left: -27px;
+    top: 34%;
+    left: -24px;
     content: '';
     width: 7px;
     height: 7px;
@@ -329,9 +333,10 @@
     left: 1%;
     width: 0;
     height: 0;
+    visibility: hidden;
 }
 
-.brand__checkbox:checked::after {
+.brand__checkbox:checked + .brand__label-name::before {
     display: block;
 }
 
@@ -466,7 +471,7 @@
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     color:#000000;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .product__sale-range {
@@ -594,7 +599,7 @@
     }
 }
 
-@media (max-width : 430px) {
+@media (max-width : 470px) {
     .main-header {
         padding: 0;
     }
